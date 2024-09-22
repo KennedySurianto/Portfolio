@@ -406,7 +406,7 @@ ol {
     padding-left: 40px;
 }
 
-/* scrollbar */
+/* sigma styling */
 ::-webkit-scrollbar {
     width: 8px;
     /* Width of the scrollbar */
@@ -432,6 +432,12 @@ ol {
 ::-webkit-scrollbar-thumb:hover {
     background: #1a1a2e;
     /* Darker shade on hover */
+}
+
+.justify-content-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .w-list-unstyled {
@@ -3744,6 +3750,16 @@ figcaption {
     right: 0%;
 }
 
+.image-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
 .about-hero-right {
     justify-content: center;
     align-items: center;
@@ -4039,6 +4055,24 @@ figcaption {
     padding-top: 3rem;
     padding-bottom: 3rem;
     display: grid;
+}
+
+.section-footer2 {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-footer2 {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-footer2 > a {
+    margin: 1vh;
 }
 
 .footer-menu {
@@ -4845,13 +4879,13 @@ figcaption {
 
 .home-service_height {
     border-radius: .625rem;
-    padding-top: 70%;
+    padding-top: 20%;
     position: relative;
     overflow: hidden;
 }
 
 .home-service_top {
-    max-width: 20rem;
+    max-width: 24rem;
     grid-column-gap: 6rem;
     grid-row-gap: 6rem;
     flex-direction: column;
