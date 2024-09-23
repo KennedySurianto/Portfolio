@@ -440,6 +440,29 @@ ol {
     justify-content: center;
 }
 
+.icon-link {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.2);  /* Enlarged size for hovered icon */
+}
+
+.icon-container {
+    display: flex;
+}
+
+.icon-container > a {
+    margin: 0 1vh;
+}
+
+.icon-container:hover > .icon-link:not(:hover) {
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+/* end of sigma styling */
+
 .w-list-unstyled {
     padding-left: 0;
     list-style: none;
@@ -4064,17 +4087,6 @@ figcaption {
     align-items: center;
 }
 
-.section-footer2 {
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-footer2 > a {
-    margin: 1vh;
-}
-
 .footer-menu {
     grid-column-gap: 2.625rem;
     grid-row-gap: 2.625rem;
@@ -4226,13 +4238,15 @@ figcaption {
     overflow: auto;
 }
 
+/* sigma navbar */
 .navbar_link-wrapper {
     width: 100%;
     grid-column-gap: 0px;
     grid-row-gap: 16px;
     flex-direction: row;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     justify-content: space-between;
     padding-top: 1.5rem;
